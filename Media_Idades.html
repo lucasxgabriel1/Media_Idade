@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<h1>Média de idades</h1>
+
+<script>
+	function pulaLinha() {
+
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	 var totalf = parseInt(prompt("Digite o total de familiares"));
+	 var n = 1;
+	 var totali = 0;
+
+	 while(n <= totalf){
+
+	 	var idade = parseInt(prompt("Digite a idade da pessoa"));
+	 	totali = totali + idade;
+	 	n++;
+	 }
+
+
+	
+	
+
+
+	var media = totali / totalf
+
+	mostra("A media das idades é " + media);
+
+
+</script>
